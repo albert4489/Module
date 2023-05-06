@@ -79,7 +79,7 @@ int calculator(char* formula) {
 
     for (int i = 0; i < length; i++) {
         if (formula[i] == ' ') {
-            continue;  // Пропускаємо пробіли
+            continue;  // Пропуск пробілів
         } else if (isdigit(formula[i])) {
             int value = 0;
 
@@ -93,7 +93,7 @@ int calculator(char* formula) {
         } else if (isOperator(formula[i])) {
             while (operatorIndex > 0 && isOperator(operators[operatorIndex - 1]) && 
                    getPriority(operators[operatorIndex - 1]) >= getPriority(formula[i])) {
-// Виконуємо попередню операцію, якщо маємо відповідні числа та оператор
+// Виконання попередньої операції, якщо є відповідні числа та оператор
     int num2 = values[--valueIndex];
     int num1 = values[--valueIndex];
     char op = operators[--operatorIndex];
@@ -105,7 +105,7 @@ operators[operatorIndex++] = formula[i];
         operators[operatorIndex++] = formula[i];
     } else if (formula[i] == ')') {
         while (operatorIndex > 0 && operators[operatorIndex - 1] != '(') {
-            // Виконуємо операції всередині дужок
+            // Виконунання операції всередині дужок
             int num2 = values[--valueIndex];
             int num1 = values[--valueIndex];
             char op = operators[--operatorIndex];
@@ -113,12 +113,12 @@ operators[operatorIndex++] = formula[i];
             values[valueIndex++] = result;
         }
 
-        // Видаляємо відкриваючу дужку 
+        // Видаляє відкриваючу дужку 
         operatorIndex--;
     }
 }
 while (operatorIndex > 0) {
-    // Виконуємо залишившіся операції
+    // Виконує залишившіся операції
     int num2 = values[--valueIndex];
     int num1 = values[--valueIndex];
     char op = operators[--operatorIndex];
