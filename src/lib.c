@@ -105,7 +105,7 @@ operators[operatorIndex++] = formula[i];
         operators[operatorIndex++] = formula[i];
     } else if (formula[i] == ')') {
         while (operatorIndex > 0 && operators[operatorIndex - 1] != '(') {
-            // Виконунання операції всередині дужок
+            // Виконання операції всередині дужок
             int num2 = values[--valueIndex];
             int num1 = values[--valueIndex];
             char op = operators[--operatorIndex];
