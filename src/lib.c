@@ -18,7 +18,7 @@ int isOperator(char ch) {
 
 /**
 	Функція видає пріорітет операторам
-	@param operator операторам
+	@param operator оператор
 */
 int getPriority(char operator) {
     if (operator == '+' || operator == '-')
