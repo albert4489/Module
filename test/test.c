@@ -1,7 +1,6 @@
 #include <check.h>
 #include "../src/lib.h"
 
-// Тест для функції isOperator
 START_TEST(test_isOperator)
 {
     ck_assert_int_eq(isOperator('+'), 1);
@@ -14,7 +13,6 @@ START_TEST(test_isOperator)
 }
 END_TEST
 
-// Тест для функції getPriority
 START_TEST(test_getPriority)
 {
     ck_assert_int_eq(getPriority('+'), 1);
@@ -27,7 +25,6 @@ START_TEST(test_getPriority)
 }
 END_TEST
 
-// Тест для функції primeperation
 START_TEST(test_primeoperation)
 {
     ck_assert_int_eq(primeoperation(2, 3, '+'), 5);
@@ -40,7 +37,6 @@ START_TEST(test_primeoperation)
 }
 END_TEST
 
-// Тест для функції calculator
 START_TEST(test_calculator)
 {
     char formula[] = "(4+8)*(6-5)/((3-2)*(2+2))";
@@ -56,7 +52,6 @@ Suite *lib_suite(void)
 
     suite = suite_create("Library");
 
-    // Додавання тестових випадків для кожної функції
     tcase = tcase_create("isOperator");
     tcase_add_test(tcase, test_isOperator);
     suite_add_tcase(suite, tcase);
