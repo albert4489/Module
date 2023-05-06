@@ -1,0 +1,16 @@
+digraph "main"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="main",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Заголовковий файл"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="calculator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lib_8c.html#ac1c631a702f9d65b9d568f097b0f59f6",tooltip="Функція для виконання операції над двома числами"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="getPriority",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lib_8c.html#a61709e569559b3b10e17bba5a68a530e",tooltip="Функція видає пріорітет операторам"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="isOperator",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lib_8c.html#ad048a67e0770ed43341d087c1a964c2c",tooltip="Заголовковий файл"];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="primeoperation",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lib_8c.html#a292a050e8bac2921f86b28786c1a62dd",tooltip="Функція для виконання операції над двома числами"];
+}

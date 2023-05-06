@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Модуль: Текст програми src/lib.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Модуль
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Калькулятор</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Створено системою Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Пошук','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Пошук');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">lib.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="lib_8h.html">Див. документацію.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef HEADER_FILE</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define HEADER_FILE</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;ctype.h&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;math.h&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="lib_8h.html#a392fb874e547e582e9c66a08a1f23326">   20</a></span>&#160;<span class="preprocessor">#define MAX 100</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">int</span> <a class="code" href="lib_8h.html#ad048a67e0770ed43341d087c1a964c2c">isOperator</a>(<span class="keywordtype">char</span> ch);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">int</span> <a class="code" href="lib_8h.html#a61709e569559b3b10e17bba5a68a530e">getPriority</a>(<span class="keywordtype">char</span> <span class="keyword">operator</span>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">int</span> <a class="code" href="lib_8h.html#a292a050e8bac2921f86b28786c1a62dd">primeoperation</a>(<span class="keywordtype">int</span> num1, <span class="keywordtype">int</span> num2, <span class="keywordtype">char</span> <span class="keyword">operator</span>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keywordtype">int</span> <a class="code" href="lib_8h.html#ac1c631a702f9d65b9d568f097b0f59f6">calculator</a>(<span class="keywordtype">char</span>* formula);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">int</span> <a class="code" href="lib_8h.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="alib_8h_html_a292a050e8bac2921f86b28786c1a62dd"><div class="ttname"><a href="lib_8h.html#a292a050e8bac2921f86b28786c1a62dd">primeoperation</a></div><div class="ttdeci">int primeoperation(int num1, int num2, char operator)</div><div class="ttdoc">Функція для виконання операції над двома числами</div><div class="ttdef"><b>Definition:</b> lib.c:40</div></div>
+<div class="ttc" id="alib_8h_html_a61709e569559b3b10e17bba5a68a530e"><div class="ttname"><a href="lib_8h.html#a61709e569559b3b10e17bba5a68a530e">getPriority</a></div><div class="ttdeci">int getPriority(char operator)</div><div class="ttdoc">Функція видає пріорітет операторам</div><div class="ttdef"><b>Definition:</b> lib.c:23</div></div>
+<div class="ttc" id="alib_8h_html_ac1c631a702f9d65b9d568f097b0f59f6"><div class="ttname"><a href="lib_8h.html#ac1c631a702f9d65b9d568f097b0f59f6">calculator</a></div><div class="ttdeci">int calculator(char *formula)</div><div class="ttdoc">Функція для виконання операції над двома числами</div><div class="ttdef"><b>Definition:</b> lib.c:73</div></div>
+<div class="ttc" id="alib_8h_html_ad048a67e0770ed43341d087c1a964c2c"><div class="ttname"><a href="lib_8h.html#ad048a67e0770ed43341d087c1a964c2c">isOperator</a></div><div class="ttdeci">int isOperator(char ch)</div><div class="ttdoc">Прототипи функцій</div><div class="ttdef"><b>Definition:</b> lib.c:15</div></div>
+<div class="ttc" id="alib_8h_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="lib_8h.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdoc">Заголовковий файл</div><div class="ttdef"><b>Definition:</b> main.c:22</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Створено системою&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
